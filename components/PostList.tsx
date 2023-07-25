@@ -16,12 +16,12 @@ interface Blog {
 
 const PostList = ({ blogs }: BlogProps) => {
     return (
-        <div>
+        <div className="w-full">
             <h2 className="mt-5">Blog List</h2>
             {
                 blogs.map((blog: Blog) => {
                     return (
-                        <ul key={blog._id} className="flex flex-col"><Post {...blog} /></ul>
+                        <ul key={blog._id} className="flex justify-center flex-col w-[110%]"><Post {...blog} /></ul>
                     )
                 })
             }

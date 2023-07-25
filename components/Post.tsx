@@ -76,8 +76,8 @@ const Post = ({ _id, title, description }: Blog) => {
 
   return (
     <li className="p-3 bg-slate-300 my-5">
-      <h2 className="text-2xl font-bold my-3">{title}</h2>
-      <p className="my-3">{description}</p>
+      <h2 className="text-2xl font-bold my-1 p-3">{title}</h2>
+      <p className="my-3 text-justify p-3">{description}</p>
       <button className="px-5 py-1 bg-blue-500 text-white rounded-2xl" onClick={() => setIsModalOpenEdit(true)}>Edit</button>
 
       <Modal isModalOpen={isModalOpenEdit} setIsModalOpen={setIsModalOpenEdit}>
