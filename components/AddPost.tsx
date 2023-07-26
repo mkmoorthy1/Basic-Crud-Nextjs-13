@@ -45,7 +45,7 @@ const AddPost = () => {
 
     return (
         <div>
-            <button onClick={() => setIsModalOpen(true)} className="mt-5 bg-blue-500 text-white font-semibold px-5 py-3 rounded-md">ADD POST</button>
+            <button onClick={() => setIsModalOpen(true)} className="mt-5 bg-blue-500 text-white font-semibold px-5 py-3 rounded-md">ADD BLOG</button>
             <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
                 <form onSubmit={handleSubmit} className="w-[75%] flex flex-col justify-center items-center m-5">
                     <h1 className="text-center my-4">Add Blog</h1>
